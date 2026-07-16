@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AP Biology Tutor Online | IGCSE, A-Level &amp; General Biology — Farvour Explorations</title>
+<meta name="description" content="Online AP Biology, IGCSE, and A-Level Biology tutoring with an interactive, inquiry-based approach. Free 30-minute trial lesson. Students in Thailand &amp; worldwide.">
+<meta name="keywords" content="AP Biology tutor, IGCSE Biology tutor, A-Level Biology tutor online, biology tutor Thailand, online biology tutoring">
+<link rel="canonical" href="https://farvourexplorations.github.io/">
+
+<!-- Open Graph / social sharing -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Farvour Explorations — Interactive Biology Tutoring, Online">
+<meta property="og:description" content="AP, IGCSE &amp; A-Level Biology tutoring built around curiosity, not memorisation. Free trial lesson available now.">
+<meta property="og:image" content="https://farvourexplorations.github.io/science-teacher-photo.jpg">
+<meta property="og:url" content="https://farvourexplorations.github.io/">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Structured data for Google -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "Farvour Explorations",
+  "description": "Online AP Biology, IGCSE Biology, and A-Level Biology tutoring with an interactive, inquiry-based teaching method.",
+  "url": "https://farvourexplorations.github.io/",
+  "image": "https://farvourexplorations.github.io/science-teacher-photo.jpg",
+  "email": "farvourexplorations@gmail.com",
+  "areaServed": ["Thailand", "Worldwide"],
+  "priceRange": "฿700–฿4500",
+  "sameAs": ["https://lin.ee/rxgS9Se"]
+}
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Fredoka+One&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<!-- Calendly widget CSS -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<style>
+:root {
+  --forest:     #1a3d2b;
+  --forest-mid: #2d6a4f;
+  --forest-lt:  #40916c;
+  --coral:      #e8603c;
+  --coral-pale: #fdf0ec;
+  --mint:       #3aaf85;
+  --mint-pale:  #e8f8f2;
+  --gold:       #c9962a;
+  --gold-pale:  #fef9e7;
+  --lav:        #7c6fcd;
+  --lav-pale:   #f0eefb;
+  --paper:      #fffef9;
+  --ink:        #1a2332;
+  --muted:      #7a8899;
+  --border:     #e0e4ea;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+
+body{
+  font-family:'Nunito',sans-serif;
+  color:var(--ink);
+  background:linear-gradient(160deg,#0d2318 0%,#1a3d2b 45%,#2d6a4f 100%);
+  min-height:100vh;
+  overflow-x:hidden;
+}
+
+/* green starfield — fixed so it shows through the whole page */
+body::before{
+  content:'';
+  position:fixed;inset:0;
+  background-image:
+    radial-gradient(1.5px 1.5px at 8%  12%,rgba(144,238,144,.4) 0%,transparent 100%),
+    radial-gradient(1px   1px   at 22% 38%,rgba(255,255,255,.28) 0%,transparent 100%),
+    radial-gradient(2px   2px   at 41% 6%, rgba(144,238,144,.32) 0%,transparent 100%),
+    radial-gradient(1px   1px   at 60% 24%,rgba(255,255,255,.22) 0%,transparent 100%),
+    radial-gradient(1.5px 1.5px at 77% 9%, rgba(144,238,144,.38) 0%,transparent 100%),
+    radial-gradient(1px   1px   at 90% 33%,rgba(255,255,255,.28) 0%,transparent 100%),
+    radial-gradient(1px   1px   at 33% 55%,rgba(144,238,144,.28) 0%,transparent 100%),
+    radial-gradient(2px   2px   at 70% 48%,rgba(255,255,255,.18) 0%,transparent 100%),
+    radial-gradient(1px   1px   at 15% 80%,rgba(144,238,144,.22) 0%,transparent 100%),
+    radial-gradient(1.5px 1.5px at 85% 70%,rgba(255,255,255,.15) 0%,transparent 100%),
+    radial-gradient(1px   1px   at 50% 90%,rgba(144,238,144,.2)  0%,transparent 100%);
+  pointer-events:none;z-index:0;
+}
+
+/* ── NAV ── */
+nav{
+  position:relative;z-index:10;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:1.3rem 2.5rem;
+  border-bottom:1px solid rgba(255,255,255,.1);
+  background:rgba(13,35,24,.6);
+  backdrop-filter:blur(8px);
+  position:sticky;top:0;
+}
+.nav-logo{
+  font-family:'Fredoka One',cursive;font-size:1.4rem;
+  color:white;text-decoration:none;display:flex;align-items:center;gap:.5rem;
+}
+.nav-logo span{color:var(--gold);}
+.nav-links{display:flex;gap:1.6rem;align-items:center;}
+.nav-links a{
+  color:rgba(255,255,255,.75);text-decoration:none;
+  font-size:.88rem;font-weight:700;transition:color .2s;
+}
+.nav-links a:hover{color:white;}
+.nav-cta{
+  background:var(--coral);color:white!important;
+  padding:.5rem 1.2rem;border-radius:10px;
+  font-weight:800!important;
+  transition:transform .2s,box-shadow .2s!important;
+  cursor:pointer;border:none;font-family:'Nunito',sans-serif;font-size:.88rem;
+}
+.nav-cta:hover{transform:translateY(-2px);box-shadow:0 4px 16px rgba(232,96,60,.5);}
+.nav-avatar{width:34px;height:34px;border-radius:50%;object-fit:cover;border:2px solid var(--gold);flex-shrink:0;}
+.nav-logo-icon{height:34px;width:auto;flex-shrink:0;}
+
+/* ── ABOUT PORTRAIT ── */
+.about-flex{display:flex;gap:2rem;align-items:flex-start;flex-wrap:wrap;margin-bottom:1.5rem;}
+.about-photo{
+  width:150px;height:150px;border-radius:16px;object-fit:cover;
+  border:3px solid var(--forest-mid);box-shadow:0 8px 24px rgba(26,61,43,.18);
+  flex-shrink:0;
+}
+.about-text{flex:1;min-width:260px;}
+@media(max-width:500px){.about-flex{justify-content:center;text-align:center;}}
+
+/* ── HERO ── */
+.hero{
+  position:relative;z-index:1;
+  text-align:center;padding:4rem 2rem 2.5rem;color:white;
+}
+.hero-badge{
+  display:inline-block;
+  background:var(--gold);color:var(--forest);
+  font-family:'Fredoka One',cursive;font-size:.88rem;
+  letter-spacing:.05em;padding:.35rem 1.2rem;border-radius:20px;
+  margin-bottom:1.2rem;box-shadow:0 2px 12px rgba(201,150,42,.45);
+}
+.hero h1{
+  font-family:'Fredoka One',cursive;
+  font-size:clamp(2.6rem,7vw,5rem);
+  line-height:1.08;margin-bottom:.8rem;
+  text-shadow:0 2px 24px rgba(0,0,0,.4);
+}
+.hero h1 .c-gold {color:var(--gold);}
+.hero h1 .c-mint {color:var(--mint);}
+.hero h1 .c-coral{color:var(--coral);}
+
+.hero-sub{
+  font-size:1.08rem;line-height:1.75;
+  color:rgba(255,255,255,.82);
+  max-width:560px;margin:0 auto 2rem;
+}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;margin-bottom:2rem;}
+
+.btn{
+  display:inline-block;font-family:'Nunito',sans-serif;
+  font-weight:800;font-size:.95rem;
+  padding:.7rem 1.6rem;border-radius:10px;
+  text-decoration:none;transition:transform .2s,box-shadow .2s;
+  cursor:pointer;border:none;
+}
+.btn:hover{transform:translateY(-2px);}
+.btn-coral{background:var(--coral);color:white;box-shadow:0 2px 14px rgba(232,96,60,.4);}
+.btn-coral:hover{box-shadow:0 6px 20px rgba(232,96,60,.5);}
+.btn-mint{background:var(--mint);color:white;}
+.btn-gold{background:var(--gold);color:var(--forest);}
+.btn-ghost{background:rgba(255,255,255,.12);border:1.5px solid rgba(255,255,255,.3);color:white;}
+.btn-ghost:hover{background:rgba(255,255,255,.2);}
+.btn-forest{background:var(--forest-mid);color:white;}
+.btn-lav{background:var(--lav);color:white;}
+
+.phase-pills{display:flex;gap:.5rem;flex-wrap:wrap;justify-content:center;}
+.pill{
+  font-family:'DM Mono',monospace;font-size:.7rem;font-weight:500;
+  padding:.3rem .9rem;border-radius:20px;
+  background:rgba(255,255,255,.1);border:1.5px solid rgba(255,255,255,.2);
+  color:rgba(255,255,255,.7);cursor:pointer;text-decoration:none;transition:all .2s;
+}
+.pill:hover{background:var(--gold);color:var(--forest);border-color:var(--gold);}
+
+/* ── SHEET ── */
+.sheet{
+  background:var(--paper);border-radius:24px 24px 0 0;
+  margin-top:2rem;position:relative;z-index:2;
+  box-shadow:0 -8px 40px rgba(0,0,0,.3);
+}
+
+/* ── SECTION ── */
+.section{padding:4rem 2rem;max-width:900px;margin:0 auto;}
+.section-eyebrow{display:flex;align-items:center;gap:.6rem;margin-bottom:.9rem;}
+.eyebrow-num{
+  width:30px;height:30px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Fredoka One',cursive;font-size:.95rem;color:white;flex-shrink:0;
+}
+.num-coral{background:var(--coral);}
+.num-mint{background:var(--mint);}
+.num-gold{background:var(--gold);color:var(--forest);}
+.num-lav{background:var(--lav);}
+.num-forest{background:var(--forest-mid);}
+
+.eyebrow-label{
+  font-family:'DM Mono',monospace;font-size:.7rem;font-weight:500;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--muted);
+}
+.section h2{
+  font-family:'Fredoka One',cursive;
+  font-size:clamp(1.8rem,4vw,2.5rem);color:var(--forest);
+  margin-bottom:.7rem;line-height:1.15;
+}
+.section .lead{font-size:1rem;line-height:1.8;color:#3a4a5a;margin-bottom:2rem;max-width:700px;}
+.section .lead strong{color:var(--coral);}
+
+/* ── WONDER BOX ── */
+.wonder-box{
+  background:linear-gradient(135deg,var(--forest) 0%,var(--forest-mid) 100%);
+  color:white;border-radius:16px;padding:1.8rem 2rem;margin-bottom:2rem;
+  position:relative;overflow:hidden;
+}
+.wonder-box::after{
+  content:'🔬';position:absolute;right:1.5rem;top:50%;
+  transform:translateY(-50%);font-size:3.5rem;opacity:.22;
+}
+.wonder-box p{font-size:1.05rem;line-height:1.75;font-style:italic;opacity:.95;max-width:82%;}
+.wonder-box strong{color:var(--gold);font-style:normal;}
+
+/* ── SUBJECT CARDS ── */
+.subject-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-bottom:2rem;}
+.subject-card{
+  background:white;border:2px solid var(--border);border-radius:16px;
+  padding:1.6rem 1.4rem;transition:transform .2s,box-shadow .2s;position:relative;overflow:hidden;
+}
+.subject-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(26,61,43,.12);}
+.subject-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;}
+.card-coral::before{background:var(--coral);}
+.card-mint::before{background:var(--mint);}
+.card-lav::before{background:var(--lav);}
+.card-gold::before{background:var(--gold);}
+.card-forest::before{background:var(--forest-mid);}
+.card-emoji{font-size:2rem;margin-bottom:.7rem;display:block;}
+.card-title{font-family:'Fredoka One',cursive;font-size:1.2rem;color:var(--forest);margin-bottom:.4rem;}
+.card-body{font-size:.88rem;line-height:1.7;color:#4a5a6a;margin-bottom:1rem;}
+.card-tags{display:flex;flex-wrap:wrap;gap:.4rem;}
+.tag{font-family:'DM Mono',monospace;font-size:.65rem;font-weight:500;padding:.22rem .65rem;border-radius:4px;}
+.tag-coral{background:var(--coral-pale);color:var(--coral);}
+.tag-mint{background:var(--mint-pale);color:var(--mint);}
+.tag-lav{background:var(--lav-pale);color:var(--lav);}
+.tag-gold{background:var(--gold-pale);color:var(--gold);}
+.tag-forest{background:#d4eadd;color:var(--forest);}
+.tag-sky{background:#e8f0f8;color:#2d5282;}
+
+/* ── LESSONS GRID ── */
+.lesson-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin-bottom:2rem;}
+.lesson-card{
+  background:white;border:1.5px solid var(--border);border-radius:14px;
+  overflow:hidden;transition:transform .2s,box-shadow .2s;text-decoration:none;color:inherit;display:block;
+}
+.lesson-card:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(26,61,43,.12);}
+.lesson-preview{
+  height:110px;display:flex;align-items:center;justify-content:center;font-size:3rem;
+}
+.preview-forest{background:linear-gradient(135deg,#0d2318,#2d6a4f);}
+.preview-dark{background:linear-gradient(135deg,#0f1117,#1e2335);}
+.preview-coral{background:linear-gradient(135deg,#7a2010,#e8603c);}
+.preview-gold{background:linear-gradient(135deg,#5a3a00,#c9962a);}
+.lesson-meta{padding:1rem 1.1rem 1.3rem;}
+.lesson-subject{font-family:'DM Mono',monospace;font-size:.65rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:.4rem;}
+.lesson-title{font-family:'Fredoka One',cursive;font-size:1.05rem;color:var(--forest);margin-bottom:.4rem;}
+.lesson-desc{font-size:.82rem;line-height:1.65;color:#5a6a7a;}
+.lesson-tags{display:flex;gap:.4rem;flex-wrap:wrap;margin-top:.7rem;}
+
+/* ── INTEREST / FUN BIOLOGY ── */
+.interest-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;margin-bottom:2rem;}
+.interest-card{
+  background:white;border:1.5px solid var(--border);border-radius:14px;
+  padding:1.3rem 1.4rem;transition:transform .2s,box-shadow .2s;cursor:pointer;
+}
+.interest-card:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(26,61,43,.1);border-color:var(--forest-lt);}
+.interest-emoji{font-size:1.8rem;margin-bottom:.6rem;display:block;}
+.interest-title{font-family:'Fredoka One',cursive;font-size:1rem;color:var(--forest);margin-bottom:.4rem;}
+.interest-desc{font-size:.82rem;line-height:1.65;color:#5a6a7a;}
+
+/* ── STEPS ── */
+.steps{display:flex;flex-direction:column;gap:.9rem;margin-bottom:2rem;}
+.step{display:flex;align-items:flex-start;gap:1rem;background:white;border:1.5px solid var(--border);border-radius:14px;padding:1.1rem 1.3rem;}
+.step-icon{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;color:white;}
+.step-text h4{font-family:'Fredoka One',cursive;font-size:1rem;color:var(--forest);margin-bottom:.25rem;}
+.step-text p{font-size:.87rem;line-height:1.7;color:#4a5a6a;}
+
+/* ── PACKAGES ── */
+.packages-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1rem;margin-bottom:2rem;}
+.package{background:white;border:2px solid var(--border);border-radius:16px;padding:1.5rem 1.3rem;text-align:center;transition:transform .2s,box-shadow .2s;}
+.package:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(26,61,43,.1);}
+.package.featured{border:2px solid var(--mint);background:var(--mint-pale);}
+.pkg-badge{display:inline-block;font-family:'DM Mono',monospace;font-size:.65rem;font-weight:500;padding:.25rem .8rem;border-radius:20px;margin-bottom:.8rem;}
+.badge-mint{background:var(--mint);color:white;}
+.badge-coral{background:var(--coral-pale);color:var(--coral);}
+.badge-gold{background:var(--gold-pale);color:var(--gold);}
+.badge-forest{background:#d4eadd;color:var(--forest);}
+.badge-lav{background:var(--lav-pale);color:var(--lav);}
+.pkg-name{font-family:'Fredoka One',cursive;font-size:1.1rem;color:var(--forest);margin-bottom:.3rem;}
+.pkg-price{font-family:'Fredoka One',cursive;font-size:1.9rem;color:var(--coral);margin-bottom:.2rem;}
+.pkg-price span{font-size:.85rem;color:var(--muted);font-family:'Nunito',sans-serif;font-weight:400;}
+.pkg-desc{font-size:.82rem;line-height:1.65;color:#4a5a6a;margin-bottom:.9rem;}
+.pkg-features{list-style:none;text-align:left;margin-bottom:1.1rem;}
+.pkg-features li{font-size:.82rem;line-height:1.6;color:#4a5a6a;padding:.22rem 0;border-bottom:1px solid var(--border);display:flex;gap:.5rem;align-items:flex-start;}
+.pkg-features li:last-child{border-bottom:none;}
+.pkg-features li::before{content:'✓';color:var(--mint);font-weight:800;flex-shrink:0;}
+
+/* ── PAYMENT ── */
+.payment-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-bottom:2rem;}
+.pay-card{background:white;border:1.5px solid var(--border);border-radius:14px;padding:1.2rem 1.3rem;text-align:center;}
+.pay-icon{font-size:2rem;margin-bottom:.6rem;}
+.pay-card h4{font-family:'Fredoka One',cursive;font-size:1rem;color:var(--forest);margin-bottom:.3rem;}
+.pay-card p{font-size:.8rem;line-height:1.6;color:#5a6a7a;}
+.pay-tag{display:inline-block;margin-top:.5rem;font-family:'DM Mono',monospace;font-size:.62rem;padding:.2rem .6rem;border-radius:4px;}
+
+/* ── CONTACT ── */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-bottom:2rem;}
+@media(max-width:640px){.contact-grid{grid-template-columns:1fr;}}
+.contact-info h3{font-family:'Fredoka One',cursive;font-size:1.25rem;color:var(--forest);margin-bottom:.8rem;}
+.contact-item{display:flex;align-items:center;gap:.7rem;padding:.6rem 0;border-bottom:1px solid var(--border);font-size:.9rem;color:#4a5a6a;}
+.contact-item:last-child{border-bottom:none;}
+.contact-item a{color:var(--coral);text-decoration:none;font-weight:700;}
+.contact-item a:hover{text-decoration:underline;}
+
+/* ── LINE EMBED ── */
+.line-box{
+  background:linear-gradient(135deg,#0a3d1a,#06c755);
+  border-radius:16px;padding:1.6rem 1.8rem;
+  display:flex;align-items:center;gap:1.5rem;
+  margin-bottom:1.5rem;flex-wrap:wrap;
+}
+.line-logo{font-size:3rem;flex-shrink:0;}
+.line-text h4{font-family:'Fredoka One',cursive;font-size:1.2rem;color:white;margin-bottom:.3rem;}
+.line-text p{font-size:.88rem;color:rgba(255,255,255,.82);line-height:1.6;}
+.line-btn{
+  margin-left:auto;
+  display:inline-block;
+  background:white;color:#06c755;
+  font-family:'Nunito',sans-serif;font-weight:800;font-size:.95rem;
+  padding:.65rem 1.5rem;border-radius:10px;text-decoration:none;
+  flex-shrink:0;transition:transform .2s,box-shadow .2s;
+  box-shadow:0 2px 12px rgba(0,0,0,.15);
+}
+.line-btn:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,.2);}
+
+/* booking form */
+.booking-form{background:var(--gold-pale);border-radius:16px;padding:1.8rem;}
+.booking-form h3{font-family:'Fredoka One',cursive;font-size:1.15rem;color:var(--forest);margin-bottom:1.2rem;}
+.form-group{margin-bottom:1rem;}
+.form-group label{display:block;font-size:.78rem;font-weight:800;color:var(--forest);margin-bottom:.3rem;font-family:'DM Mono',monospace;letter-spacing:.05em;text-transform:uppercase;}
+.form-group input,.form-group select,.form-group textarea{
+  width:100%;background:white;border:1.5px solid var(--border);border-radius:8px;
+  padding:.6rem .9rem;font-family:'Nunito',sans-serif;font-size:.9rem;color:var(--ink);outline:none;transition:border-color .2s;
+}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--forest-lt);}
+.form-group textarea{resize:vertical;min-height:76px;}
+
+/* calendly trigger styling */
+.calendly-trigger{
+  display:inline-block;font-family:'Nunito',sans-serif;font-weight:800;font-size:.95rem;
+  padding:.7rem 1.6rem;border-radius:10px;background:var(--mint);color:white;
+  box-shadow:0 2px 14px rgba(58,175,133,.4);cursor:pointer;border:none;
+  transition:transform .2s,box-shadow .2s;text-decoration:none;width:100%;text-align:center;
+}
+.calendly-trigger:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(58,175,133,.5);}
+
+/* ── GOLD INSIGHT BOX ── */
+.insight-box{background:var(--gold-pale);border:2px dashed var(--gold);border-radius:14px;padding:1.3rem 1.5rem;margin-bottom:2rem;}
+.insight-box p{font-size:.92rem;line-height:1.75;}
+.insight-box strong{color:var(--gold);}
+
+/* ── DIVIDER ── */
+.divider{height:1px;background:var(--border);max-width:860px;margin:0 auto;}
+
+/* ── FOOTER ── */
+footer{
+  background:var(--forest);color:rgba(255,255,255,.75);
+  padding:3rem 2rem 2rem;text-align:center;position:relative;overflow:hidden;
+}
+footer::before{
+  content:'';position:absolute;inset:0;
+  background-image:
+    radial-gradient(1px 1px at 15% 25%,rgba(144,238,144,.3) 0%,transparent 100%),
+    radial-gradient(1px 1px at 55% 15%,rgba(255,255,255,.2) 0%,transparent 100%),
+    radial-gradient(1.5px 1.5px at 85% 40%,rgba(144,238,144,.25) 0%,transparent 100%),
+    radial-gradient(1px 1px at 35% 70%,rgba(255,255,255,.18) 0%,transparent 100%);
+  pointer-events:none;
+}
+.footer-logo{font-family:'Fredoka One',cursive;font-size:1.7rem;color:white;margin-bottom:.5rem;position:relative;}
+.footer-logo span{color:var(--gold);}
+.footer-links{display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap;margin:1.1rem 0;}
+.footer-links a{color:rgba(255,255,255,.6);text-decoration:none;font-size:.82rem;font-weight:700;transition:color .2s;}
+.footer-links a:hover{color:var(--gold);}
+hr.footer-divider{border:none;border-top:1px solid rgba(255,255,255,.12);margin:1.4rem auto;max-width:400px;}
+
+/* ── STICKY BOOK BAR ── */
+.book-bar{
+  position:fixed;bottom:0;left:0;right:0;
+  background:white;border-top:2px solid var(--border);
+  padding:.75rem 2rem;display:flex;align-items:center;justify-content:space-between;
+  z-index:100;box-shadow:0 -4px 20px rgba(0,0,0,.08);
+  display:none;
+}
+.book-bar-text{font-size:.9rem;font-weight:700;color:var(--forest);}
+.book-bar-text span{color:var(--coral);}
+
+/* ── FADE UP ── */
+.fade-up{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease;}
+.fade-up.visible{opacity:1;transform:translateY(0);}
+
+/* ── RESPONSIVE ── */
+@media(max-width:700px){
+  nav{padding:1rem 1.2rem;}
+  .nav-links{display:none;}
+  .hero h1{font-size:2.4rem;}
+  .packages-grid{grid-template-columns:1fr;}
+  .line-box{flex-direction:column;}
+  .line-btn{margin-left:0;width:100%;text-align:center;}
+}
+</style>
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav>
+  <a href="#top" class="nav-logo"><img src="logo-icon.png" alt="Farvour Explorations logo" class="nav-logo-icon"> Farvour <span>Explorations</span></a>
+  <div class="nav-links">
+    <a href="#subjects">Subjects</a>
+    <a href="#lessons">Sample Lessons</a>
+    <a href="#packages">Packages</a>
+    <a href="#referral">Refer a Friend</a>
+    <a href="#contact">Contact</a>
+    <button class="nav-cta" onclick="Calendly.initPopupWidget({url:'https://calendly.com/farvourexplorations/free-30-minutetrial-lesson'});return false;">Book Free Trial →</button>
+  </div>
+</nav>
+
+<!-- ── HERO ── -->
+<section class="hero" id="top">
+  <div class="hero-badge">🌍 Thailand &amp; Worldwide · Online · Inquiry-Based Learning</div>
+  <h1>
+    Biology that<br>
+    <span class="c-gold">Sparks</span>
+    <span class="c-mint">Curiosity</span><br>
+    &amp; <span class="c-coral">Results</span>
+  </h1>
+  <p class="hero-sub">
+    Interactive digital lessons for IGCSE, AP, A-Level &amp; General Biology —
+    plus explorations just for the wonder of it. Not just exam prep. Real science.
+  </p>
+  <div class="hero-btns">
+    <button class="btn btn-coral" onclick="Calendly.initPopupWidget({url:'https://calendly.com/farvourexplorations/free-30-minutetrial-lesson'});return false;">Book a Free Trial Lesson</button>
+    <a href="#lessons" class="btn btn-ghost">See Sample Lessons</a>
+  </div>
+  <div class="phase-pills">
+    <a href="#subjects" class="pill">🧬 IGCSE Biology</a>
+    <a href="#subjects" class="pill">🔬 AP Biology</a>
+    <a href="#subjects" class="pill">📖 A-Level Biology</a>
+    <a href="#subjects" class="pill">🌿 General Biology</a>
+    <a href="#subjects" class="pill">✨ Curiosity Lab</a>
+    <a href="#packages" class="pill">📦 Packages</a>
+  </div>
+</section>
+
+<!-- ── SHEET ── -->
+<div class="sheet">
+
+  <!-- WONDER -->
+  <div class="section fade-up" id="about">
+    <div class="section-eyebrow">
+      <div class="eyebrow-num num-coral">1</div>
+      <span class="eyebrow-label">Wonder · Why Farvour?</span>
+    </div>
+    <h2>🌟 Biology shouldn't just be something you survive before an exam</h2>
+    <div class="about-flex">
+      <img src="science-teacher-photo.jpg" alt="Founder and tutor at Farvour Explorations" class="about-photo">
+      <div class="about-text">
+        <p class="lead" style="margin-bottom:1rem;">
+          <!-- EDIT ME: swap in your real bio — background, years tutoring, credentials, why biology -->
+          Hi, I'm the tutor behind Farvour Explorations. I've focused specifically on Biology — mostly AP Biology, 
+          alongside IGCSE and A-Level — because deep expertise in one subject beats being a generalist stretched thin.
+        </p>
+        <p class="lead">
+          Most students memorise biology. At Farvour Explorations, they <strong>live it</strong> — predicting, investigating, 
+          discovering, and reflecting. Every session follows the same five-phase cycle that makes concepts stick long after the test.
+        </p>
+      </div>
+    </div>
+    <div class="wonder-box">
+      <p>
+        <strong>"What if a lesson felt like solving a genuine mystery?"</strong> What if you understood 
+        <em>why</em> cells behave the way they do — not just what to write on the mark scheme? 
+        That's the question every Farvour session is built to answer.
+      </p>
+    </div>
+    <p style="font-size:.8rem;color:var(--muted);font-family:'DM Mono',monospace;">
+      Every lesson: Wonder → Discover → Lab → Analyse → Reflect
+    </p>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- SUBJECTS -->
+  <div class="section fade-up" id="subjects">
+    <div class="section-eyebrow">
+      <div class="eyebrow-num num-forest">2</div>
+      <span class="eyebrow-label">Discover · What we cover</span>
+    </div>
+    <h2>🎯 One subject. Five pathways. All inquiry-based.</h2>
+    <p class="lead">
+      Farvour Explorations specialises in <strong>Biology only</strong> — which means you get deep expertise, 
+      not a generalist tutor stretched across subjects. Whether you're sitting Cambridge, College Board, 
+      Edexcel, or just genuinely fascinated by life science, there's a pathway for you.
+    </p>
+    <div class="subject-grid">
+      <div class="subject-card card-mint fade-up">
+        <span class="card-emoji">🧬</span>
+        <div class="card-title">IGCSE Biology</div>
+        <p class="card-body">Cambridge 0610 — interactive past papers with instant feedback, structured revision, and exam technique workshops. Built around what Cambridge actually tests.</p>
+        <div class="card-tags">
+          <span class="tag tag-mint">Cambridge 0610</span>
+          <span class="tag tag-forest">Gr 9–11</span>
+          <span class="tag tag-gold">Exam Prep</span>
+        </div>
+      </div>
+      <div class="subject-card card-coral fade-up">
+        <span class="card-emoji">🔬</span>
+        <div class="card-title">AP Biology</div>
+        <p class="card-body">College Board AP — deep conceptual understanding, data analysis, free-response practice, and lab investigations. Taught to actually understand, not just pass.</p>
+        <div class="card-tags">
+          <span class="tag tag-coral">College Board</span>
+          <span class="tag tag-forest">Gr 10–12</span>
+          <span class="tag tag-gold">AP Exam</span>
+        </div>
+      </div>
+      <div class="subject-card card-lav fade-up">
+        <span class="card-emoji">📖</span>
+        <div class="card-title">A-Level Biology</div>
+        <p class="card-body">Edexcel, AQA, OCR — rigorous concept building, practical skills, and extended writing. Bridging the gap between GCSE and university-level thinking.</p>
+        <div class="card-tags">
+          <span class="tag tag-lav">Edexcel / AQA</span>
+          <span class="tag tag-forest">Gr 11–13</span>
+          <span class="tag tag-sky">A-Level</span>
+        </div>
+      </div>
+      <div class="subject-card card-gold fade-up">
+        <span class="card-emoji">🌿</span>
+        <div class="card-title">General Biology</div>
+        <p class="card-body">Middle school science, IB MYP biology, or any student who wants a solid foundation — taught with the same interactive, inquiry-first approach.</p>
+        <div class="card-tags">
+          <span class="tag tag-gold">Gr 5–9</span>
+          <span class="tag tag-forest">MYP / KS3</span>
+          <span class="tag tag-mint">Foundation</span>
+        </div>
+      </div>
+      <div class="subject-card card-forest fade-up">
+        <span class="card-emoji">✨</span>
+        <div class="card-title">Curiosity Lab</div>
+        <p class="card-body">Not for any test — just because biology is fascinating. Choose a topic that genuinely interests you: disease history, ecology, deep ocean life, extinction events, or bring your own question. We investigate it together.</p>
+        <div class="card-tags">
+          <span class="tag tag-forest">Any Age</span>
+          <span class="tag tag-lav">Interest-Led</span>
+          <span class="tag tag-coral">No Syllabus</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- HOW IT WORKS -->
+  <div class="section fade-up" id="how">
+    <div class="section-eyebrow">
+      <div class="eyebrow-num num-mint">3</div>
+      <span class="eyebrow-label">Lab · How every lesson works</span>
+    </div>
+    <h2>⚗️ The five-phase cycle</h2>
+    <p class="lead">Every Farvour session follows the same structure. Students always know what's coming — so they spend their energy <strong>thinking</strong>, not navigating.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-icon" style="background:var(--coral)">1</div>
+        <div class="step-text">
+          <h4>🤔 Wonder — the hook</h4>
+          <p>An unexpected question or real-world provocation before any instruction. Students write their thinking first. Curiosity before content.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-icon" style="background:var(--lav)">2</div>
+        <div class="step-text">
+          <h4>🔍 Discover — build the model</h4>
+          <p>Tap-to-reveal vocabulary, concept panels, and interactive scales. Students construct their mental framework before the investigation begins.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-icon" style="background:var(--mint)">3</div>
+        <div class="step-text">
+          <h4>🧪 Lab — hands-on digital investigation</h4>
+          <p>Interactive simulations, MCQ with instant feedback, data-sorting activities, and virtual dissections. Learning by genuinely doing.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-icon" style="background:var(--gold);color:var(--forest)">4</div>
+        <div class="step-text">
+          <h4>📊 Analyse — make sense of results</h4>
+          <p>Live score feedback, pattern recognition, and guided analysis help students see their own misconceptions in real time — not after the test.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-icon" style="background:var(--forest-mid)">5</div>
+        <div class="step-text">
+          <h4>💬 Reflect — thinking about thinking</h4>
+          <p>Students write what surprised them, what they still wonder, and how their thinking changed. This metacognitive step is what makes it stick.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- SAMPLE LESSONS -->
+  <div class="section fade-up" id="lessons">
+    <div class="section-eyebrow">
+      <div class="eyebrow-num num-gold">4</div>
+      <span class="eyebrow-label">Lab · Sample interactive lessons</span>
+    </div>
+    <h2>📂 Try the lessons yourself</h2>
+    <p class="lead">These are fully interactive HTML lessons — not slideshows. Students work through them live during sessions or as guided pre-work. <strong>Open one and see.</strong></p>
+
+    <div class="lesson-grid">
+      <a href="https://farvourexplorations.github.io/lessons/bio-ch1-study-of-life.html" class="lesson-card" target="_blank">
+        <div class="lesson-preview preview-forest">🌿</div>
+        <div class="lesson-meta">
+          <div class="lesson-subject">AP Biology · Characteristics of Life</div>
+          <div class="lesson-title">The Study of Life</div>
+          <p class="lesson-desc">What makes something alive? An inquiry-led investigation into the characteristics of life, biological organisation, and the nature of science itself.</p>
+          <div class="lesson-tags">
+            <span class="tag tag-forest">Interactive</span>
+            <span class="tag tag-mint">Self-marking</span>
+            <span class="tag tag-gold">Wonder → Reflect</span>
+          </div>
+        </div>
+      </a>
+      <a href="https://farvourexplorations.github.io/lessons/movement-into-and-out-of-cells.html" class="lesson-card" target="_blank">
+        <div class="lesson-preview preview-coral">🔴</div>
+        <div class="lesson-meta">
+          <div class="lesson-subject">IGCSE / A-Level Biology · Cell Transport</div>
+          <div class="lesson-title">Movement Into &amp; Out of Cells</div>
+          <p class="lesson-desc">Diffusion, osmosis, and active transport — explored through live simulations and interactive investigations. Students predict outcomes before they happen, then test their thinking.</p>
+          <div class="lesson-tags">
+            <span class="tag tag-coral">IGCSE · A-Level</span>
+            <span class="tag tag-mint">Simulations</span>
+            <span class="tag tag-lav">Predict → Test</span>
+          </div>
+        </div>
+      </a>
+      <a href="igcse-biology-mcq-2023.html" class="lesson-card" target="_blank">
+        <div class="lesson-preview preview-dark">🧬</div>
+        <div class="lesson-meta">
+          <div class="lesson-subject">IGCSE Biology · Cambridge 0610</div>
+          <div class="lesson-title">Cambridge MCQ Practice Paper</div>
+          <p class="lesson-desc">A full past paper reimagined as a live interactive exam — instant answer reveal, question-by-question feedback, and running score tracker.</p>
+          <div class="lesson-tags">
+            <span class="tag tag-mint">Instant Feedback</span>
+            <span class="tag tag-gold">Score Tracking</span>
+            <span class="tag tag-lav">Cambridge Aligned</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PACKAGES -->
+  <div class="section fade-up" id="packages">
+    <div class="section-eyebrow">
+      <div class="eyebrow-num num-coral">5</div>
+      <span class="eyebrow-label">Real World · Pricing &amp; packages</span>
+    </div>
+    <h2>💰 Clear packages. No hidden fees.</h2>
+    <p class="lead">All sessions are online via Google Meet. Payment via PromptPay (Thai families) or Wise (international). <strong>First trial lesson is always free.</strong></p>
+    <div class="packages-grid">
+      <div class="package">
+        <span class="pkg-badge badge-coral">Trial</span>
+        <div class="pkg-name">Free Trial</div>
+        <div class="pkg-price">฿0 <span>/ 30 min</span></div>
+        <p class="pkg-desc">One free session so you can see if it's a good fit.</p>
+        <ul class="pkg-features">
+          <li>Any subject, any level</li>
+          <li>Live 1-on-1 via Google Meet</li>
+          <li>No commitment needed</li>
+        </ul>
+        <button class="btn btn-coral" style="width:100%;font-size:.88rem;" onclick="Calendly.initPopupWidget({url:'https://calendly.com/farvourexplorations/free-30-minutetrial-lesson'});return false;">Book Free Trial</button>
+      </div>
+      <div class="package">
+        <span class="pkg-badge badge-lav">1-on-1</span>
+        <div class="pkg-name">Solo Session</div>
+        <div class="pkg-price">฿700 <span>/ session</span></div>
+        <p class="pkg-desc">Single 1-on-1 lesson. Ideal for focused exam prep or a one-off curiosity topic.</p>
+        <ul class="pkg-features">
+          <li>60 min 1-on-1</li>
+          <li>Full interactive materials</li>
+          <li>LINE support same day</li>
+        </ul>
+        <button class="btn btn-lav" style="width:100%;font-size:.88rem;" onclick="Calendly.initPopupWidget({url:'https://calendly.com/farvourexplorations/free-30-minutetrial-lesson'});return false;">Book Now</button>
+      </div>
+      <div class="package featured">
+        <span class="pkg-badge badge-mint">★ Best Value</span>
+        <div class="pkg-name">Monthly Programme</div>
+        <div class="pkg-price">฿4,500 <span>/ month</span></div>
+        <p class="pkg-desc">2 sessions per week, homework support, and a monthly progress report.</p>
+        <ul class="pkg-features">
+          <li>2 × 60 min/week</li>
+          <li>All materials included</li>
+          <li>LINE homework support</li>
+          <li>Monthly parent report</li>
+          <li>Practice papers + marking</li>
+        </ul>
+        <button class="btn btn-mint" style="width:100%;font-size:.88rem;" onclick="Calendly.initPopupWidget({url:'https://calendly.com/farvourexplorations/free-30-minutetrial-lesson'});return false;">Get Started</button>
+      </div>
+      <div class="package">
+        <span class="pkg-badge badge-gold">Group</span>
+        <div class="pkg-name">Group Workshop</div>
+        <div class="pkg-price">฿1,800 <span>/ student/mo</span></div>
+        <p class="pkg-desc">Small groups of 3–5. Same quality, more peer discussion, better value.</p>
+        <ul class="pkg-features">
+          <li>3–5 students max</li>
+          <li>2 × 60 min/week</li>
+          <li>Shared interactive activities</li>
+          <li>Individual progress tracking</li>
+        </ul>
+        <button class="btn btn-gold" style="width:100%;font-size:.88rem;" onclick="Calendly.initPopupWidget({url:'https://calendly.com/farvourexplorations/free-30-minutetrial-lesson'});return false;">Form a Group</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- REFERRAL -->
+  <div class="section fade-up" id="referral">
+    <div class="section-eyebrow">
+      <div class="eyebrow-num num-lav">6</div>
+      <span class="eyebrow-label">Real World · Refer a friend</span>
+    </div>
+    <h2>🎁 Know another student who'd love this? You both win.</h2>
+    <p class="lead">
+      The best recommendations come from families who've already seen it work. Refer a friend, and once they book 
+      their first paid session, <strong>you both get ฿200 off</strong> — no limit on how many times.
+    </p>
+    <div class="wonder-box" style="background:linear-gradient(135deg,var(--lav) 0%,#5f52b0 100%);">
+      <p style="max-width:100%;">
+        <strong>How it works:</strong> Just have them mention your name on LINE or in the enquiry form when they book 
+        their free trial. Once they sign up for a paid package, ฿200 gets credited to both of your next session.
+      </p>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PAYMENT -->
+  <div class="section fade-up" id="payment">
+    <div class="section-eyebrow">
+      <div class="eyebrow-num num-forest">7</div>
+      <span class="eyebrow-label">Real World · How to pay</span>
+    </div>
+    <h2>💳 Easy payments — local &amp; international</h2>
+    <p class="lead">No platform fees, no commissions. Thai families pay by PromptPay QR — instant and free. International families use Wise for the real exchange rate.</p>
+    <div class="payment-row">
+      <div class="pay-card">
+        <div class="pay-icon">📱</div>
+        <h4>PromptPay QR</h4>
+        <p>Scan and pay instantly — zero fees, works with every Thai bank app.</p>
+        <span class="pay-tag" style="background:var(--mint-pale);color:var(--mint);">✓ Thai families</span>
+      </div>
+      <div class="pay-card">
+        <div class="pay-icon">🏦</div>
+        <h4>Thai Bank Transfer</h4>
+        <p>Direct transfer to Kasikorn / SCB. Send payment screenshot via LINE to confirm.</p>
+        <span class="pay-tag" style="background:var(--mint-pale);color:var(--mint);">✓ Thai families</span>
+      </div>
+      <div class="pay-card">
+        <div class="pay-icon">🌍</div>
+        <h4>Wise</h4>
+        <p>Pay in USD, GBP, EUR, AUD, SGD — arrives as Thai Baht at real exchange rates.</p>
+        <span class="pay-tag" style="background:var(--lav-pale);color:var(--lav);">✓ International</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- CONTACT -->
+  <div class="section fade-up" id="contact">
+    <div class="section-eyebrow">
+      <div class="eyebrow-num num-mint">8</div>
+      <span class="eyebrow-label">Book · Get in touch</span>
+    </div>
+    <h2>📬 Book your free trial — or just say hello</h2>
+    <p class="lead">The fastest response is always via LINE. For international enquiries, email works great. First trial lesson is free — no commitment, no pressure.</p>
+
+    <!-- LINE embed -->
+    <div class="line-box">
+      <div class="line-logo">💬</div>
+      <div class="line-text">
+        <h4>Message on LINE — fastest response</h4>
+        <p>Thai and international students welcome. Add Farvour Explorations on LINE for same-day replies, booking confirmations, and lesson reminders.</p>
+      </div>
+      <a href="https://lin.ee/rxgS9Se" class="line-btn" target="_blank">Add on LINE →</a>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Contact details</h3>
+        <div class="contact-item">💬 <span>LINE: <a href="https://lin.ee/rxgS9Se" target="_blank">Farvour Explorations</a></span></div>
+        <div class="contact-item">📧 <span>Email: <a href="mailto:farvourexplorations@gmail.com">farvourexplorations@gmail.com</a></span></div>
+        <div class="contact-item">🕐 <span>Available Mon–Sat, flexible hours (Bangkok / UTC+7)</span></div>
+        <div class="contact-item">📍 <span>Online via Google Meet · Students in Thailand &amp; worldwide</span></div>
+        <div style="margin-top:1.5rem;">
+          <button class="calendly-trigger" onclick="Calendly.initPopupWidget({url:'https://calendly.com/farvourexplorations/free-30-minutetrial-lesson'});return false;">📅 Schedule a session with me →</button>
+        </div>
+      </div>
+      <div class="booking-form">
+        <h3>Quick enquiry</h3>
+        <div class="form-group">
+          <label>Student's Name</label>
+          <input type="text" placeholder="e.g. Nong Ploy / Emma">
+        </div>
+        <div class="form-group">
+          <label>Your Email</label>
+          <input type="email" placeholder="your@email.com">
+        </div>
+        <div class="form-group">
+          <label>Subject &amp; Level</label>
+          <select>
+            <option>IGCSE Biology (Cambridge 0610)</option>
+            <option>AP Biology (College Board)</option>
+            <option>A-Level Biology (Edexcel / AQA / OCR)</option>
+            <option>General Biology (Gr 5–9 / MYP)</option>
+            <option>Curiosity Lab — just for interest</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Session type</label>
+          <select>
+            <option>Free Trial First — decide later</option>
+            <option>Monthly Programme (฿4,500/mo)</option>
+            <option>Group Workshop (฿1,800/student/mo)</option>
+            <option>Single Session (฿700)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Anything else?</label>
+          <textarea placeholder="Exam date, curriculum, specific topics, or a curiosity question..."></textarea>
+        </div>
+        <button class="btn btn-coral" style="width:100%;font-size:.95rem;padding:.75rem;" onclick="alert('Thanks! We\'ll reply via LINE or email within 24 hours. 🔬')">Send Enquiry →</button>
+      </div>
+    </div>
+  </div>
+
+</div><!-- end sheet -->
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">🔬 Farvour <span>Explorations</span></div>
+  <p>Interactive Biology · IGCSE · AP · A-Level · General · Thailand &amp; Worldwide</p>
+  <div class="footer-links">
+    <a href="#about">About</a>
+    <a href="#subjects">Subjects</a>
+    <a href="#lessons">Lessons</a>
+    <a href="#packages">Packages</a>
+    <a href="#referral">Refer a Friend</a>
+    <a href="#contact">Contact</a>
+    <a href="https://lin.ee/rxgS9Se" target="_blank">LINE</a>
+    <a href="mailto:farvourexplorations@gmail.com">Email</a>
+  </div>
+  <hr class="footer-divider">
+  <p style="font-size:.78rem;opacity:.45;position:relative;">© 2026 Farvour Explorations · Inquiry-Based Biology for the Curious Mind · <span style="font-family:'DM Mono',monospace;">v2.0</span></p>
+</footer>
+
+<!-- STICKY BOOK BAR -->
+<div class="book-bar" id="bookBar">
+  <span class="book-bar-text">🔬 Farvour Explorations — <span>Free trial lesson available now</span></span>
+  <button class="btn btn-coral" onclick="Calendly.initPopupWidget({url:'https://calendly.com/farvourexplorations/free-30-minutetrial-lesson'});return false;">Book Free Trial →</button>
+</div>
+
+<script>
+// Fade-up on scroll
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+},{threshold:0.1});
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+// Sticky book bar
+const bar = document.getElementById('bookBar');
+window.addEventListener('scroll', () => {
+  bar.style.display = window.scrollY > 500 ? 'flex' : 'none';
+});
+</script>
+</body>
+</html>
