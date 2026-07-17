@@ -7,6 +7,7 @@
 <meta name="description" content="Online AP Biology, IGCSE, and A-Level Biology tutoring with an interactive, inquiry-based approach. Free 30-minute trial lesson. Students in Thailand &amp; worldwide.">
 <meta name="keywords" content="AP Biology tutor, IGCSE Biology tutor, A-Level Biology tutor online, biology tutor Thailand, online biology tutoring">
 <link rel="canonical" href="https://farvourexplorations.github.io/">
+<link rel="icon" type="image/jpeg" href="casual-photo.jpg">
 
 <!-- Open Graph / social sharing -->
 <meta property="og:type" content="website">
@@ -27,8 +28,13 @@
   "image": "https://farvourexplorations.github.io/science-teacher-photo.jpg",
   "email": "farvourexplorations@gmail.com",
   "areaServed": ["Thailand", "Worldwide"],
-  "priceRange": "฿700–฿4500",
-  "sameAs": ["https://lin.ee/rxgS9Se"]
+  "priceRange": "฿900–฿6000",
+  "sameAs": ["https://lin.ee/rxgS9Se"],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "reviewCount": "2"
+  }
 }
 </script>
 
@@ -293,7 +299,8 @@ nav{
 
 /* ── PACKAGES ── */
 .packages-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1rem;margin-bottom:2rem;}
-.package{background:white;border:2px solid var(--border);border-radius:16px;padding:1.5rem 1.3rem;text-align:center;transition:transform .2s,box-shadow .2s;}
+.package{background:white;border:2px solid var(--border);border-radius:16px;padding:1.5rem 1.3rem;text-align:center;transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column;}
+.package>button{margin-top:auto;}
 .package:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(26,61,43,.1);}
 .package.featured{border:2px solid var(--mint);background:var(--mint-pale);}
 .pkg-badge{display:inline-block;font-family:'DM Mono',monospace;font-size:.65rem;font-weight:500;padding:.25rem .8rem;border-radius:20px;margin-bottom:.8rem;}
@@ -429,7 +436,7 @@ hr.footer-divider{border:none;border-top:1px solid rgba(255,255,255,.12);margin:
 
 <!-- ── NAV ── -->
 <nav>
-  <a href="#top" class="nav-logo"><img src="logo-icon.png" alt="Farvour Explorations logo" class="nav-logo-icon"> Farvour <span>Explorations</span></a>
+  <a href="#top" class="nav-logo"><img src="casual-photo.jpg" alt="Farvour Explorations tutor" class="nav-avatar">🔬 Farvour <span>Explorations</span></a>
   <div class="nav-links">
     <a href="#subjects">Subjects</a>
     <a href="#lessons">Sample Lessons</a>
@@ -658,7 +665,7 @@ hr.footer-divider{border:none;border-top:1px solid rgba(255,255,255,.12);margin:
           </div>
         </div>
       </a>
-      <a href="igcse-biology-mcq-2023.html" class="lesson-card" target="_blank">
+      <a href="https://farvourexplorations.github.io/lessons/igcse-biology-mcq-2023.html" class="lesson-card" target="_blank">
         <div class="lesson-preview preview-dark">🧬</div>
         <div class="lesson-meta">
           <div class="lesson-subject">IGCSE Biology · Cambridge 0610</div>
@@ -700,7 +707,7 @@ hr.footer-divider{border:none;border-top:1px solid rgba(255,255,255,.12);margin:
       <div class="package">
         <span class="pkg-badge badge-lav">1-on-1</span>
         <div class="pkg-name">Solo Session</div>
-        <div class="pkg-price">฿700 <span>/ session</span></div>
+        <div class="pkg-price" data-thb="900">฿900 <span>/ session</span></div>
         <p class="pkg-desc">Single 1-on-1 lesson. Ideal for focused exam prep or a one-off curiosity topic.</p>
         <ul class="pkg-features">
           <li>60 min 1-on-1</li>
@@ -712,8 +719,8 @@ hr.footer-divider{border:none;border-top:1px solid rgba(255,255,255,.12);margin:
       <div class="package featured">
         <span class="pkg-badge badge-mint">★ Best Value</span>
         <div class="pkg-name">Monthly Programme</div>
-        <div class="pkg-price">฿4,500 <span>/ month</span></div>
-        <p class="pkg-desc">2 sessions per week, homework support, and a monthly progress report.</p>
+        <div class="pkg-price" data-thb="6000">฿6,000 <span>/ month</span></div>
+        <p class="pkg-desc">8 sessions/month (2×/week) at ~฿750/session — a modest discount vs. booking solo sessions one at a time.</p>
         <ul class="pkg-features">
           <li>2 × 60 min/week</li>
           <li>All materials included</li>
@@ -726,11 +733,11 @@ hr.footer-divider{border:none;border-top:1px solid rgba(255,255,255,.12);margin:
       <div class="package">
         <span class="pkg-badge badge-gold">Group</span>
         <div class="pkg-name">Group Workshop</div>
-        <div class="pkg-price">฿1,800 <span>/ student/mo</span></div>
-        <p class="pkg-desc">Small groups of 3–5. Same quality, more peer discussion, better value.</p>
+        <div class="pkg-price" data-thb="2300">฿2,300 <span>/ student/mo</span></div>
+        <p class="pkg-desc">Small groups of up to 3. Same quality, more peer discussion, better value.</p>
         <ul class="pkg-features">
-          <li>3–5 students max</li>
-          <li>2 × 60 min/week</li>
+          <li>Up to 3 students</li>
+          <li>2 × 55 min/week</li>
           <li>Shared interactive activities</li>
           <li>Individual progress tracking</li>
         </ul>
@@ -741,10 +748,37 @@ hr.footer-divider{border:none;border-top:1px solid rgba(255,255,255,.12);margin:
 
   <div class="divider"></div>
 
+  <!-- TESTIMONIALS -->
+  <div class="section fade-up" id="testimonials">
+    <div class="section-eyebrow">
+      <div class="eyebrow-num num-mint">6</div>
+      <span class="eyebrow-label">Real World · What families say</span>
+    </div>
+    <h2>💬 Don't just take our word for it</h2>
+    <div class="packages-grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr));">
+      <div class="package" style="text-align:left;">
+        <div style="color:var(--gold);font-size:1rem;letter-spacing:.15rem;margin-bottom:.6rem;" aria-label="5 out of 5 stars">★★★★★</div>
+        <p style="font-size:.95rem;line-height:1.7;color:#3a4a5a;margin-bottom:1rem;">
+          "Seth is a great, dedicated and very helpful teacher. I really enjoy working with his self made websites."
+        </p>
+        <p style="font-size:.82rem;color:var(--muted);font-weight:700;">— Marta <span style="font-weight:400;">· July 14, 2026</span></p>
+      </div>
+      <div class="package" style="text-align:left;">
+        <div style="color:var(--gold);font-size:1rem;letter-spacing:.15rem;margin-bottom:.6rem;" aria-label="5 out of 5 stars">★★★★★</div>
+        <p style="font-size:.95rem;line-height:1.7;color:#3a4a5a;margin-bottom:1rem;">
+          "Seth was well-prepared, explained concepts clearly, and made the material easy to understand. Mack enjoyed the lesson and found it very helpful."
+        </p>
+        <p style="font-size:.82rem;color:var(--muted);font-weight:700;">— Mai <span style="font-weight:400;">· June 6, 2026</span></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
   <!-- REFERRAL -->
   <div class="section fade-up" id="referral">
     <div class="section-eyebrow">
-      <div class="eyebrow-num num-lav">6</div>
+      <div class="eyebrow-num num-lav">7</div>
       <span class="eyebrow-label">Real World · Refer a friend</span>
     </div>
     <h2>🎁 Know another student who'd love this? You both win.</h2>
@@ -765,7 +799,7 @@ hr.footer-divider{border:none;border-top:1px solid rgba(255,255,255,.12);margin:
   <!-- PAYMENT -->
   <div class="section fade-up" id="payment">
     <div class="section-eyebrow">
-      <div class="eyebrow-num num-forest">7</div>
+      <div class="eyebrow-num num-forest">8</div>
       <span class="eyebrow-label">Real World · How to pay</span>
     </div>
     <h2>💳 Easy payments — local &amp; international</h2>
@@ -797,7 +831,7 @@ hr.footer-divider{border:none;border-top:1px solid rgba(255,255,255,.12);margin:
   <!-- CONTACT -->
   <div class="section fade-up" id="contact">
     <div class="section-eyebrow">
-      <div class="eyebrow-num num-mint">8</div>
+      <div class="eyebrow-num num-mint">9</div>
       <span class="eyebrow-label">Book · Get in touch</span>
     </div>
     <h2>📬 Book your free trial — or just say hello</h2>
@@ -826,38 +860,43 @@ hr.footer-divider{border:none;border-top:1px solid rgba(255,255,255,.12);margin:
       </div>
       <div class="booking-form">
         <h3>Quick enquiry</h3>
-        <div class="form-group">
-          <label>Student's Name</label>
-          <input type="text" placeholder="e.g. Nong Ploy / Emma">
-        </div>
-        <div class="form-group">
-          <label>Your Email</label>
-          <input type="email" placeholder="your@email.com">
-        </div>
-        <div class="form-group">
-          <label>Subject &amp; Level</label>
-          <select>
-            <option>IGCSE Biology (Cambridge 0610)</option>
-            <option>AP Biology (College Board)</option>
-            <option>A-Level Biology (Edexcel / AQA / OCR)</option>
-            <option>General Biology (Gr 5–9 / MYP)</option>
-            <option>Curiosity Lab — just for interest</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label>Session type</label>
-          <select>
-            <option>Free Trial First — decide later</option>
-            <option>Monthly Programme (฿4,500/mo)</option>
-            <option>Group Workshop (฿1,800/student/mo)</option>
-            <option>Single Session (฿700)</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label>Anything else?</label>
-          <textarea placeholder="Exam date, curriculum, specific topics, or a curiosity question..."></textarea>
-        </div>
-        <button class="btn btn-coral" style="width:100%;font-size:.95rem;padding:.75rem;" onclick="alert('Thanks! We\'ll reply via LINE or email within 24 hours. 🔬')">Send Enquiry →</button>
+        <form id="enquiryForm" onsubmit="return handleEnquirySubmit(event)">
+          <input type="hidden" name="access_key" value="7f3537fe-aa24-4494-af5d-310c286d7f55">
+          <input type="hidden" name="subject" value="New enquiry from Farvour Explorations website">
+          <div class="form-group">
+            <label>Student's Name</label>
+            <input type="text" name="student_name" placeholder="e.g. Nong Ploy / Emma" required>
+          </div>
+          <div class="form-group">
+            <label>Your Email</label>
+            <input type="email" name="email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label>Subject &amp; Level</label>
+            <select name="subject_level">
+              <option>IGCSE Biology (Cambridge 0610)</option>
+              <option>AP Biology (College Board)</option>
+              <option>A-Level Biology (Edexcel / AQA / OCR)</option>
+              <option>General Biology (Gr 5–9 / MYP)</option>
+              <option>Curiosity Lab — just for interest</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Session type</label>
+            <select name="session_type">
+              <option>Free Trial First — decide later</option>
+              <option>Monthly Programme (฿6,000/mo)</option>
+              <option>Group Workshop (฿2,300/student/mo)</option>
+              <option>Single Session (฿900)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Anything else?</label>
+            <textarea name="message" placeholder="Exam date, curriculum, specific topics, or a curiosity question..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-coral" id="enquirySubmitBtn" style="width:100%;font-size:.95rem;padding:.75rem;">Send Enquiry →</button>
+          <p id="enquiryStatus" style="margin-top:.6rem;font-size:.85rem;"></p>
+        </form>
       </div>
     </div>
   </div>
@@ -899,6 +938,54 @@ document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 const bar = document.getElementById('bookBar');
 window.addEventListener('scroll', () => {
   bar.style.display = window.scrollY > 500 ? 'flex' : 'none';
+});
+
+// Enquiry form submission via Web3Forms (free — get your key at web3forms.com)
+async function handleEnquirySubmit(e){
+  e.preventDefault();
+  const form = document.getElementById('enquiryForm');
+  const btn = document.getElementById('enquirySubmitBtn');
+  const status = document.getElementById('enquiryStatus');
+  const key = form.access_key.value;
+  if(!key || key === 'PASTE_YOUR_WEB3FORMS_KEY_HERE'){
+    status.style.color = '#c0392b';
+    status.textContent = 'Form not fully set up yet — see setup note below. In the meantime, please email or LINE me directly!';
+    return false;
+  }
+  btn.disabled = true; btn.textContent = 'Sending...';
+  try{
+    const res = await fetch('https://api.web3forms.com/submit', {
+      method:'POST',
+      headers:{'Content-Type':'application/json', Accept:'application/json'},
+      body: JSON.stringify(Object.fromEntries(new FormData(form)))
+    });
+    const data = await res.json();
+    if(data.success){
+      status.style.color = 'var(--forest-mid)';
+      status.textContent = "Thanks! I'll reply via LINE or email within 24 hours. 🔬";
+      form.reset();
+    } else {
+      throw new Error(data.message || 'Submission failed');
+    }
+  } catch(err){
+    status.style.color = '#c0392b';
+    status.textContent = 'Something went wrong — please email or LINE me directly instead.';
+  }
+  btn.disabled = false; btn.textContent = 'Send Enquiry →';
+  return false;
+}
+
+// Approximate USD price display alongside THB (helps international/overseas parents)
+// Update THB_TO_USD periodically to keep it roughly accurate — this is a static approximation, not a live rate.
+const THB_TO_USD = 1/36;
+document.querySelectorAll('.pkg-price[data-thb]').forEach(el => {
+  const thb = parseFloat(el.getAttribute('data-thb'));
+  if(!thb) return; // skip free (฿0)
+  const usd = Math.round(thb * THB_TO_USD);
+  const note = document.createElement('div');
+  note.style.cssText = 'font-size:.72rem;opacity:.65;font-weight:500;margin-top:-.3rem;';
+  note.textContent = `≈ $${usd} USD`;
+  el.after(note);
 });
 </script>
 </body>
